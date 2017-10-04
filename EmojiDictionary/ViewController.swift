@@ -73,7 +73,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //Constant used to move from one controller to the next
         let defViewController = segue.destination as! DefinitionViewController
-        defViewController.emoji = sender as! String
+        defViewController.emoji = sender as! Emoji
     }
     
     

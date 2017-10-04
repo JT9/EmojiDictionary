@@ -18,7 +18,7 @@ class DefinitionViewController: UIViewController {
     
     @IBOutlet weak var emojiLabel: UILabel!
     
-    var emoji = "NO EMOJI"
+    var emoji = Emoji()
     
     
     override func viewDidLoad() {
@@ -26,58 +26,16 @@ class DefinitionViewController: UIViewController {
 
         print(emoji)
         //Getting the emoji passed from the TableView cellLabel
-        emojiLabel.text = emoji
+        emojiLabel.text = emoji.stringEmoji
         
-        //If statements to change the definitionLabel to the corresponding emoji
-        if emoji == "😃" {
-         
-            definitionLabel.text = "Smiling Face!"
-            categoryLabel.text = "Category: Smiley"
-            dateCreatedLabel.text = "Date Created: 2011"
-            
-        }
-        if emoji == "👊" {
-            
-            definitionLabel.text = "Fist Bump!"
-            categoryLabel.text = "Category: Gesture"
-            dateCreatedLabel.text = "Date Created: 2010"
-            
-        }
-        if emoji == "🎃" {
-            
-            definitionLabel.text = "Halloween!"
-            categoryLabel.text = "Category: Holiday"
-            dateCreatedLabel.text = "Date Created: 2009"
-            
-        }
-        if emoji == "😺" {
-            
-            definitionLabel.text = "Smiling Cat Face!"
-            categoryLabel.text = "Category: Animal"
-            dateCreatedLabel.text = "Date Created: 2011"
-            
-        }
-        if emoji == "👺" {
-            
-            definitionLabel.text = "Goblin!"
-            categoryLabel.text = "Category: Supernatural"
-            dateCreatedLabel.text = "Date Created: 2009"
-            
-        }
-        if emoji == "💩" {
-            
-            definitionLabel.text = "Poop!"
-            categoryLabel.text = "Category: Smiley"
-            dateCreatedLabel.text = "Date Created: 2010"
-            
-        }
-        if emoji == "👻" {
-            
-            definitionLabel.text = "Ghost!"
-            categoryLabel.text = "Category: Supernatural"
-            dateCreatedLabel.text = "Date Created: 2013"
-            
-        }
+        //Updating dateCreatedLabel from DefinitionViewController
+        dateCreatedLabel.text = "Date Created: \(emoji.dateCreated)"
+        
+        //Updating categoryLabel from DefinitionViewController
+        categoryLabel.text = "Category: \(emoji.category)"
+        
+        //Updating definitionLabel from DefinitionViewController
+        definitionLabel.text = emoji.definition
         
     }
 
