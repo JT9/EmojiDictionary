@@ -39,33 +39,43 @@ class DefinitionViewController: UIViewController {
         if emoji == "👊" {
             
             definitionLabel.text = "Fist Bump!"
-            categoryLabel.text = "Category: Hand"
-            dateCreatedLabel.text = "Date Created: 2009"
+            categoryLabel.text = "Category: Gesture"
+            dateCreatedLabel.text = "Date Created: 2010"
             
         }
         if emoji == "🎃" {
             
             definitionLabel.text = "Halloween!"
+            categoryLabel.text = "Category: Holiday"
+            dateCreatedLabel.text = "Date Created: 2009"
             
         }
         if emoji == "😺" {
             
             definitionLabel.text = "Smiling Cat Face!"
+            categoryLabel.text = "Category: Animal"
+            dateCreatedLabel.text = "Date Created: 2011"
             
         }
         if emoji == "👺" {
             
             definitionLabel.text = "Goblin!"
+            categoryLabel.text = "Category: Supernatural"
+            dateCreatedLabel.text = "Date Created: 2009"
             
         }
         if emoji == "💩" {
             
             definitionLabel.text = "Poop!"
+            categoryLabel.text = "Category: Smiley"
+            dateCreatedLabel.text = "Date Created: 2010"
             
         }
         if emoji == "👻" {
             
             definitionLabel.text = "Ghost!"
+            categoryLabel.text = "Category: Supernatural"
+            dateCreatedLabel.text = "Date Created: 2013"
             
         }
         
