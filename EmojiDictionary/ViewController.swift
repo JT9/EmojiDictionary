@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var emojiTableView: UITableView!
     
-    
+    //Empty array of type Emoji from Emoji class
     var emojis : [Emoji] = []
     
     override func viewDidLoad() {
