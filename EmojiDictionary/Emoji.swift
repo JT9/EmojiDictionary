@@ -9,6 +9,7 @@
 //Emoji class used to create emoji objects to be put into the array in ViewController
 class Emoji {
     
+    //Properties of the Emoji Class
     var stringEmoji = ""
     var definition = ""
     var category = ""
